@@ -50,3 +50,11 @@ a {
 .blog{
   width: 15rem;
 }
+
+.button{
+  padding: 10px;
+  margin: 2rem;
+  background-color: var(--gray-alpha-200);
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out;
+}
