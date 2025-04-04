@@ -40,3 +40,13 @@ a {
     color-scheme: dark;
   }
 }
+
+.blogContainer{
+  margin: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.blog{
+  width: 15rem;
+}
