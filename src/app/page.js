@@ -12,6 +12,9 @@ export default function Home() {
       <Link href="/blogs" className={styles.button}>
         View Blogs
       </Link>
+      <Link href="/newBlog" className={styles.button}>
+        add blogs
+      </Link>
       <Image
         src="/images/blog.jpg"
         alt="Blog Image"

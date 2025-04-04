@@ -15,6 +15,10 @@ export default function Blogs() {
 
   return (
     <div className="blogContainer">
+      <Link href="/newBlog" className={styles.button}>
+        add blogs
+      </Link>
+      <h1>All blogs</h1>
       {blogs.map((blog) => (
         <div className="blog" key={blog.id}>
           <h1 className="blogTitle">{blog.title}</h1>

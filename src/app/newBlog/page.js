@@ -31,6 +31,9 @@ export default function BlogsPage() {
 
   return (
     <div className="p-4 max-w-xl mx-auto">
+      <Link href="/blogs" className={styles.button}>
+        View Blogs
+      </Link>
       <h1 className="text-2xl font-bold mb-4">Add New Blog</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
