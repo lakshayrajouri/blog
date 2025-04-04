@@ -21,8 +21,8 @@ export default function Blogs() {
           add blogs
         </Link>
       </div>
+      <h1 className="heading">All blogs</h1>
       <div className="blogContainer">
-        <h1>All blogs</h1>
         {blogs.map((blog) => (
           <div className="blog" key={blog.id}>
             <h1 className="blogTitle">{blog.title}</h1>

@@ -36,7 +36,7 @@ export default function BlogsPage() {
         View Blogs
       </Link>
       <div className="blogContainer">
-        <h1 className="text-2xl font-bold mb-4">Add New Blog</h1>
+        <h1 className="heading">Add New Blog</h1>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
             type="text"
