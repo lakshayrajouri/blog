@@ -16,12 +16,12 @@ export default function Blogs() {
 
   return (
     <div>
-      <div>
+      <div className="fixed">
         <Link href="/newBlog" className="button">
           add blogs
         </Link>
+        <h1 className="heading">All blogs</h1>
       </div>
-      <h1 className="heading">All blogs</h1>
       <div className="blogContainer">
         {blogs.map((blog) => (
           <div className="blog" key={blog.id}>

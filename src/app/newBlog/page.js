@@ -31,39 +31,38 @@ export default function BlogsPage() {
   };
 
   return (
-    <div className="p-4 max-w-xl mx-auto">
-      <Link href="/blogs" className="button">
-        View Blogs
-      </Link>
-      <div className="blogContainer">
+    <div>
+      <div className="fixed">
+        <Link href="/blogs" className="button">
+          View Blogs
+        </Link>
         <h1 className="heading">Add New Blog</h1>
-        <form onSubmit={handleSubmit} className="space-y-4">
+      </div>
+      <div className="blogContainer">
+        <form onSubmit={handleSubmit} className="form">
           <input
             type="text"
             placeholder="Title"
-            className="w-full border p-2 rounded"
+            className="formInput"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             required
           />
           <textarea
             placeholder="Content"
-            className="w-full border p-2 rounded h-40"
+            className="formInput"
             value={content}
             onChange={(e) => setContent(e.target.value)}
             required
           />
-          <button
-            type="submit"
-            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-          >
+          <button type="submit" className="formButton">
             Submit
           </button>
         </form>
-        {success && (
-          <p className="text-green-600 mt-2">Blog added successfully!</p>
-        )}
-        {error && <p className="text-red-600 mt-2">{error}</p>}
+      </div>
+      <div className="message">
+        {success && <p>Blog added successfully!</p>}
+        {error && <p>{error}</p>}
       </div>
     </div>
   );
