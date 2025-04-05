@@ -44,7 +44,7 @@ export async function POST(req) {
       headers: { "Content-Type": "application/json" },
     });
   } catch (err) {
-    console.error("Error creating blog:", err);
+    console.err("Error creating blog:", err);
     return new Response(JSON.stringify({ error: "Failed to create blog" }), {
       status: 500,
     });

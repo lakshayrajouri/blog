@@ -17,6 +17,7 @@ body {
 }
 
 body {
+  margin-top: 20px;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
